@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ServicesSection: React.FC = () => {
   const [activeService, setActiveService] = React.useState("home-planner");
@@ -41,18 +42,28 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section className="box-border flex flex-col items-center justify-center gap-14 pt-10 mx-auto max-w-[1226px] max-md:px-5 max-sm:px-4 max-sm:mt-16">
-      <header className="box-border flex flex-col items-center gap-1">
+      <motion.header
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="box-border flex flex-col items-center gap-1"
+      >
         <h2 className="box-border self-stretch text-5xl font-semibold tracking-tighter leading-10 text-center text-neutral-800 max-md:text-4xl max-md:leading-10 max-sm:text-3xl max-sm:leading-8">
           Chúng tôi giúp tổ chức &amp; cá nhân
         </h2>
         <h2 className="box-border self-stretch text-5xl bg-gradient-to-r from-cyan-400 to-teal-600 bg-clip-text text-transparent font-semibold tracking-tighter leading-none text-center bg-clip-text h-[59px] max-md:text-4xl max-md:leading-10 max-sm:text-3xl max-sm:leading-8">
           đạt được mục tiêu tài chính
         </h2>
-      </header>
+      </motion.header>
       <div className="box-border self-stretch h-px bg-gray-300" />
 
       <div className="hidden md:flex gap-8 w-full h-[542px]">
-        <div className="box-border flex flex-col items-start h-[542px] w-[547px]">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="box-border flex flex-col items-start h-[542px] w-[547px]"
+        >
           <div className="box-border gap-7 flex flex-col self-stretch items-start">
             {services.map((service) => {
               const isActive = activeService === service.id;
@@ -105,57 +116,73 @@ const ServicesSection: React.FC = () => {
               </span>
             </button>
           </Link>
-        </div>
-        <div className="box-border relative bg-gray-100 rounded-xl h-[542px] w-[647px] p-3">
-          {activeService === "home-planner" && (
-            <div className="flex flex-col w-full h-full gap-4">
-              <img
-                src="/Frame 1321315865.png"
-                alt="Tổng quan kế hoạch"
-                className="w-full h-auto rounded-xl shadow-sm"
-              />
-              <article className="relative">
-                <img
-                  src="/Group 1000002581.png"
-                  alt="Xem trước kế hoạch"
-                  className="w-full h-auto rounded-xl shadow-sm"
-                />
-              </article>
-            </div>
-          )}
-          {activeService === "corporate-education" && (
-            <div className="flex flex-col w-full h-full gap-4 px-2 py-2">
-              <img
-                src="/Frame 1321315876.png"
-                alt="Tổng quan kế hoạch"
-                className="w-full h-auto rounded-xl shadow-sm"
-              />
-              <img
-                src="/Frame 1321315877.png"
-                alt="Xem trước kế hoạch"
-                className="w-full h-auto rounded-xl shadow-sm"
-              />
-            </div>
-          )}
-          {activeService === "personal-education" && (
-             <div className="flex flex-col w-full h-full gap-4">
-                <div className="w-full flex-grow bg-white rounded-lg">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="box-border relative bg-gray-100 rounded-xl h-[542px] w-[647px] p-3"
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeService}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="w-full h-full"
+            >
+              {activeService === "home-planner" && (
+                <div className="flex flex-col w-full h-full gap-4">
                   <img
-                    src="/Frame 1321315874.png"
+                    src="/Frame 1321315865.png"
                     alt="Tổng quan kế hoạch"
                     className="w-full h-auto rounded-xl shadow-sm"
-                  />                  
+                  />
+                  <article className="relative">
+                    <img
+                      src="/Group 1000002581.png"
+                      alt="Xem trước kế hoạch"
+                      className="w-full h-auto rounded-xl shadow-sm"
+                    />
+                  </article>
                 </div>
-                <div className="w-full flex-grow bg-white rounded-lg">
+              )}
+              {activeService === "corporate-education" && (
+                <div className="flex flex-col w-full h-full gap-4 px-2 py-2">
                   <img
-                    src="/Frame 1321315875.png"
+                    src="/Frame 1321315876.png"
+                    alt="Tổng quan kế hoạch"
+                    className="w-full h-auto rounded-xl shadow-sm"
+                  />
+                  <img
+                    src="/Frame 1321315877.png"
                     alt="Xem trước kế hoạch"
                     className="w-full h-auto rounded-xl shadow-sm"
                   />
                 </div>
-            </div>
-          )}
-        </div>
+              )}
+              {activeService === "personal-education" && (
+                 <div className="flex flex-col w-full h-full gap-4">
+                    <div className="w-full flex-grow bg-white rounded-lg">
+                      <img
+                        src="/Frame 1321315874.png"
+                        alt="Tổng quan kế hoạch"
+                        className="w-full h-auto rounded-xl shadow-sm"
+                      />                  
+                    </div>
+                    <div className="w-full flex-grow bg-white rounded-lg">
+                      <img
+                        src="/Frame 1321315875.png"
+                        alt="Xem trước kế hoạch"
+                        className="w-full h-auto rounded-xl shadow-sm"
+                      />
+                    </div>
+                </div>
+              )}
+            </motion.div>
+          </AnimatePresence>
+        </motion.div>
       </div>
 
       {/* GIAO DIỆN MOBILE: Chỉ hiển thị trên màn hình nhỏ hơn 'md' */}

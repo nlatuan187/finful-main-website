@@ -14,7 +14,7 @@ const Homepage: React.FC = () => {
       />
       <Navigation />
       {/* <HeroSection /> */}
-      <main className="box-border p-0 m-0 w-full bg-white flex flex-col mb-10 mt-32 items-center">
+      <main className="box-border p-0 m-0 w-full bg-white flex flex-col mb-10 mt-32 max-md:mt-10 items-center">
         {/* <VisionMissionCards /> */}
         <ServicesSection />
       </main>

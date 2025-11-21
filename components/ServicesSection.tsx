@@ -48,10 +48,10 @@ const ServicesSection: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="box-border flex flex-col items-center gap-1"
       >
-        <h2 className="box-border self-stretch text-5xl font-semibold tracking-tighter leading-10 text-center text-neutral-800 max-md:text-4xl max-md:leading-10 max-sm:text-3xl max-sm:leading-8">
+        <h2 className="box-border self-stretch text-5xl font-semibold max-md:text-2xl tracking-tighter leading-10 text-center text-neutral-800 max-md:leading-10 max-sm:leading-8">
           Chúng tôi giúp tổ chức &amp; cá nhân
         </h2>
-        <h2 className="box-border self-stretch text-5xl bg-gradient-to-r from-cyan-400 to-teal-600 bg-clip-text text-transparent font-semibold tracking-tighter leading-none text-center bg-clip-text h-[59px] max-md:text-4xl max-md:leading-10 max-sm:text-3xl max-sm:leading-8">
+        <h2 className="box-border self-stretch text-5xl bg-gradient-to-r from-cyan-400 to-teal-600 bg-clip-text text-transparent font-semibold tracking-tighter leading-none text-center bg-clip-text h-[59px] max-md:text-2xl max-md:leading-10 max-sm:text-2xl max-sm:leading-8">
           đạt được mục tiêu tài chính
         </h2>
       </motion.header>
@@ -71,20 +71,18 @@ const ServicesSection: React.FC = () => {
                 <article
                   key={service.id}
                   onClick={() => setActiveService(service.id)}
-                  className={`box-border flex relative flex-col gap-2.5 items-start self-stretch px-6 py-7 rounded-xl cursor-pointer transition-all duration-300 ${
-                    isActive
-                      ? "bg-cyan-600 text-white"
-                      : "bg-gray-100 text-zinc-800"
-                  }`}
+                  className={`box-border flex relative flex-col gap-2.5 items-start self-stretch px-6 py-7 rounded-xl cursor-pointer transition-all duration-300 ${isActive
+                    ? "bg-cyan-600 text-white"
+                    : "bg-gray-100 text-zinc-800"
+                    }`}
                 >
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center gap-3">
                       <img
                         src={service.icon}
                         alt="Task icon"
-                        className={`box-border w-6 h-6 aspect-[1/1] ${
-                          isActive ? "brightness-0 invert" : "brightness-0"
-                        }`}
+                        className={`box-border w-6 h-6 aspect-[1/1] ${isActive ? "brightness-0 invert" : "brightness-0"
+                          }`}
                       />
                       <h3 className="box-border text-2xl font-semibold tracking-tight leading-10 max-sm:text-lg max-sm:leading-6">
                         {service.title}
@@ -93,9 +91,8 @@ const ServicesSection: React.FC = () => {
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/c85af886dd5e81fdc8834dd08a410fe2d44ac342?width=42"
                       alt="Arrow icon"
-                      className={`box-border aspect-[1/1] h-[21px] w-[21px] transition-all duration-300 ${
-                        isActive ? "" : "transform rotate-180 brightness-0"
-                      }`}
+                      className={`box-border aspect-[1/1] h-[21px] w-[21px] transition-all duration-300 ${isActive ? "" : "transform rotate-180 brightness-0"
+                        }`}
                     />
                   </div>
                   {isActive && (
@@ -163,21 +160,21 @@ const ServicesSection: React.FC = () => {
                 </div>
               )}
               {activeService === "personal-education" && (
-                 <div className="flex flex-col w-full h-full gap-4">
-                    <div className="w-full flex-grow bg-white rounded-lg">
-                      <img
-                        src="/Frame 1321315874.png"
-                        alt="Tổng quan kế hoạch"
-                        className="w-full h-auto rounded-xl shadow-sm"
-                      />                  
-                    </div>
-                    <div className="w-full flex-grow bg-white rounded-lg">
-                      <img
-                        src="/Frame 1321315875.png"
-                        alt="Xem trước kế hoạch"
-                        className="w-full h-auto rounded-xl shadow-sm"
-                      />
-                    </div>
+                <div className="flex flex-col w-full h-full gap-4">
+                  <div className="w-full flex-grow bg-white rounded-lg">
+                    <img
+                      src="/Frame 1321315874.png"
+                      alt="Tổng quan kế hoạch"
+                      className="w-full h-auto rounded-xl shadow-sm"
+                    />
+                  </div>
+                  <div className="w-full flex-grow bg-white rounded-lg">
+                    <img
+                      src="/Frame 1321315875.png"
+                      alt="Xem trước kế hoạch"
+                      className="w-full h-auto rounded-xl shadow-sm"
+                    />
+                  </div>
                 </div>
               )}
             </motion.div>
@@ -193,11 +190,10 @@ const ServicesSection: React.FC = () => {
             <React.Fragment key={service.id}>
               <article
                 onClick={() => setActiveService(isActive ? "" : service.id)}
-                className={`flex flex-col p-6 rounded-xl transition-all duration-300 cursor-pointer ${
-                  isActive
-                    ? "bg-cyan-600 text-white"
-                    : "bg-gray-100 text-zinc-800"
-                }`}
+                className={`flex flex-col p-6 rounded-xl transition-all duration-300 cursor-pointer ${isActive
+                  ? "bg-cyan-600 text-white"
+                  : "bg-gray-100 text-zinc-800"
+                  }`}
               >
                 {/* Header của accordion (Icon, Title, Mũi tên) */}
                 <div className="flex items-center justify-between w-full">
@@ -205,9 +201,8 @@ const ServicesSection: React.FC = () => {
                     <img
                       src={service.icon}
                       alt="Task icon"
-                      className={`w-6 h-6 aspect-square ${
-                        isActive ? "brightness-0 invert" : "brightness-0"
-                      }`}
+                      className={`w-6 h-6 aspect-square ${isActive ? "brightness-0 invert" : "brightness-0"
+                        }`}
                     />
                     <h3 className="text-lg font-semibold leading-6">
                       {service.title}
@@ -216,10 +211,9 @@ const ServicesSection: React.FC = () => {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/c85af886dd5e81fdc8834dd08a410fe2d44ac342?width=42"
                     alt="Arrow icon"
-                    className={`h-[21px] w-[21px] transition-transform duration-300 ${
-                      isActive ? "transform rotate-180" // Giữ nguyên logic mũi tên
-                      : "brightness-0" 
-                    }`}
+                    className={`h-[21px] w-[21px] transition-transform duration-300 ${isActive ? "transform rotate-180" // Giữ nguyên logic mũi tên
+                      : "brightness-0"
+                      }`}
                   />
                 </div>
 
@@ -255,16 +249,16 @@ const ServicesSection: React.FC = () => {
                     {service.id === "corporate-education" && (
                       <div className="box-border relative bg-gray-100 rounded-xl w-full p-3">
                         <div className="flex flex-col w-full h-full gap-4">
-                          <img src="/Frame 1321315876.png" alt="Kế hoạch doanh nghiệp" className="w-full rounded-xl shadow-sm"/>
-                          <img src="/Frame 1321315877.png" alt="Kế hoạch doanh nghiệp 2" className="w-full rounded-xl shadow-sm"/>
+                          <img src="/Frame 1321315876.png" alt="Kế hoạch doanh nghiệp" className="w-full rounded-xl shadow-sm" />
+                          <img src="/Frame 1321315877.png" alt="Kế hoạch doanh nghiệp 2" className="w-full rounded-xl shadow-sm" />
                         </div>
                       </div>
                     )}
                     {service.id === "personal-education" && (
                       <div className="box-border relative bg-gray-100 rounded-xl w-full p-3">
                         <div className="flex flex-col w-full h-full gap-4">
-                          <img src="/Frame 1321315874.png" alt="Kế hoạch cá nhân" className="w-full rounded-xl shadow-sm"/>
-                          <img src="/Frame 1321315875.png" alt="Kế hoạch cá nhân 2" className="w-full rounded-xl shadow-sm"/>
+                          <img src="/Frame 1321315874.png" alt="Kế hoạch cá nhân" className="w-full rounded-xl shadow-sm" />
+                          <img src="/Frame 1321315875.png" alt="Kế hoạch cá nhân 2" className="w-full rounded-xl shadow-sm" />
                         </div>
                       </div>
                     )}

@@ -35,11 +35,11 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className="w-full bg-white bg-opacity-80 backdrop-blur-sm sticky top-0 z-50">
-      <img
+      {/* <img
         src="/Hero_background.png"
         alt="Hero background"
         className="box-border object-cover absolute w-full h-full"
-      />
+      /> */}
       <div className="relative flex justify-between items-center max-w-full my-2 mx-auto px-4">
         <Link href="/">
           <img
@@ -80,11 +80,11 @@ const Navigation: React.FC = () => {
             </div>
           ))}
 
-          <Link href="https://muanha.finful.co/"target="_blank" className="flex items-center justify-center gap-2.5 px-5 h-11 bg-cyan-600 text-white rounded-lg shadow-sm">
+          <Link href="https://muanha.finful.co/" target="_blank" className="flex items-center justify-center gap-2.5 px-5 h-11 bg-cyan-600 text-white rounded-lg shadow-sm">
             <span className="text-sm font-medium">Lập kế hoạch mua nhà</span>
             <svg width="12" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
-              <path d="M1.25 5.79529H11.75" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M7.45435 1.5L11.7498 5.79545L7.45435 10.0909" stroke="white" strokeWidth="1.27273" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M1.25 5.79529H11.75" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M7.45435 1.5L11.7498 5.79545L7.45435 10.0909" stroke="white" strokeWidth="1.27273" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </Link>
         </div>
@@ -126,8 +126,8 @@ const Navigation: React.FC = () => {
               <Link href="https://muanha.finful.co/" target="_blank" className="flex items-center justify-center w-full gap-2.5 px-3 py-2 mt-4 h-9 bg-cyan-600 rounded-lg shadow-sm">
                 <span className="text-sm font-medium text-white">Lập kế hoạch mua nhà</span>
                 <svg width="12" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3 h-3">
-                  <path d="M1.25 5.79529H11.75" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M7.45435 1.5L11.7498 5.79545L7.45435 10.0909" stroke="white" strokeWidth="1.27273" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M1.25 5.79529H11.75" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M7.45435 1.5L11.7498 5.79545L7.45435 10.0909" stroke="white" strokeWidth="1.27273" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
             </div>

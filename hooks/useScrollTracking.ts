@@ -14,9 +14,10 @@ declare global {
 export function useScrollTracking(sectionIds: string[]) {
     const trackedSections = useRef<Set<string>>(new Set());
     const observersRef = useRef<IntersectionObserver[]>([]);
+    const isInitialized = useRef(false);
 
     useEffect(() => {
-        if (typeof window === 'undefined') return;
+        if (typeof window === 'undefined' || isInitialized.current) return;
 
         // Function to setup observers
         const setupObservers = () => {
@@ -26,6 +27,7 @@ export function useScrollTracking(sectionIds: string[]) {
             }
 
             console.log('✅ Google Analytics loaded, setting up scroll tracking...');
+            isInitialized.current = true;
 
             sectionIds.forEach((sectionId) => {
                 const element = document.getElementById(sectionId);

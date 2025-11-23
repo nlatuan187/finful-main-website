@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 
 export default function PricingSection({ onSelectPackage }: { onSelectPackage?: (pkg: string) => void }) {
   const handleScrollToRegister = (packageName: string) => {
+    // Track pricing button click in Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'pricing_click', {
+        package_name: packageName,
+        event_category: 'engagement',
+        event_label: `Clicked pricing: ${packageName}`,
+      });
+      console.log(`📊 GA Event: pricing_click - ${packageName}`);
+    }
+
     if (onSelectPackage) {
       onSelectPackage(packageName);
     }

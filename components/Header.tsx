@@ -29,13 +29,7 @@ export default function Header() {
                         >
                             Tư vấn mua nhà
                         </a>
-                        <a
-                            href="https://global.finful.co/sign-in?redirect_url=https%3A%2F%2Fglobal.finful.co%2Fcourse%2F654b4b6c919baafbb5c4e975%3Ffbclid%3DIwY2xjawGXuPtleHRuA2FlbQIxMAABHVmJVUh1h6PjYXMWcGrc4Rk4_QmPn22qZimfZLo3aj_a-POutj-ma8d90w_aem_j78gg5nee3mqU6GYcU4ItA"
-                            target="_blank"
-                            className="text-[#656C86] text-[15px] font-semibold hover:text-brand-teal transition-colors"
-                        >
-                            Tư vấn đầu tư
-                        </a>
+
                         <a
                             href="https://education.finful.co/"
                             target="_blank"
@@ -93,13 +87,7 @@ export default function Header() {
                         >
                             Tư vấn mua nhà
                         </a>
-                        <a
-                            href="https://global.finful.co/sign-in?redirect_url=https%3A%2F%2Fglobal.finful.co%2Fcourse%2F654b4b6c919baafbb5c4e975%3Ffbclid%3DIwY2xjawGXuPtleHRuA2FlbQIxMAABHVmJVUh1h6PjYXMWcGrc4Rk4_QmPn22qZimfZLo3aj_a-POutj-ma8d90w_aem_j78gg5nee3mqU6GYcU4ItA"
-                            target="_blank"
-                            className="text-[#656C86] text-[15px] font-semibold hover:text-brand-teal transition-colors"
-                        >
-                            Tư vấn đầu tư
-                        </a>
+
                         <a
                             href="https://education.finful.co/"
                             target="_blank"

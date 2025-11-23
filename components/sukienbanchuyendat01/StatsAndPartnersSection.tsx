@@ -45,7 +45,7 @@ export default function StatsAndPartnersSection() {
   const partnersRow2 = [
     {
       src: "https://api.builder.io/api/v1/image/assets/TEMP/b51ce3b1ce8722560fd77d0e582ae3393d0bcaf0?width=480",
-      alt: "VinUni",
+      alt: "VinUniversity",
       width: "w-48 sm:w-60",
     },
     {

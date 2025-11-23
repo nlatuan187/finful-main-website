@@ -38,6 +38,13 @@ export default function HeroSection() {
     },
   };
 
+  const handleScrollToRegister = () => {
+    const registerSection = document.getElementById('register');
+    if (registerSection) {
+      registerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative min-h-[680px] bg-gradient-to-b from-[#E2F6FC] via-[#E2F6FC] to-white overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -92,7 +99,7 @@ export default function HeroSection() {
                 variants={itemVariants}
               >
                 🕓 9H30 - 11H30 <span className="text-[#BCBCBC]">|</span> THỨ 7 -
-                6.12.2025 <span className="text-[#BCBCBC]">|</span> VIN UNIVERSITY
+                6.12.2025 <span className="text-[#BCBCBC]">|</span> VINUNIVERSITY
               </motion.div>
             </div>
 
@@ -177,7 +184,7 @@ export default function HeroSection() {
               </motion.div>
 
               <motion.div
-                className="flex flex-row items-center gap-4 sm:gap-8 text-center"
+                className="flex flex-row items-center gap-4 sm:gap-8 text-center mb-8"
                 variants={itemVariants}
               >
                 <div>
@@ -203,6 +210,15 @@ export default function HeroSection() {
                     FINFUL
                   </p>
                 </div>
+              </motion.div>
+
+              <motion.div variants={itemVariants}>
+                <button
+                  onClick={handleScrollToRegister}
+                  className="inline-flex items-center justify-center px-8 py-4 text-xl sm:text-[22px] font-semibold text-white bg-gradient-to-r from-[#004D52] to-brand-teal rounded-lg hover:shadow-xl transition-all"
+                >
+                  Đăng ký ngay &gt;&gt;
+                </button>
               </motion.div>
             </div>
           </motion.div>

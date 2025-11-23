@@ -212,6 +212,10 @@ export default function HeroSection() {
                 </div>
               </motion.div>
 
+            </div>
+
+            {/* CTA Button - Centered below everything */}
+            <div className="col-span-1 lg:col-span-2 flex justify-center mt-8 lg:mt-12">
               <motion.div variants={itemVariants}>
                 <button
                   onClick={handleScrollToRegister}

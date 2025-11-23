@@ -3,8 +3,11 @@
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function PricingSection() {
-  const handleScrollToRegister = () => {
+export default function PricingSection({ onSelectPackage }: { onSelectPackage?: (pkg: string) => void }) {
+  const handleScrollToRegister = (packageName: string) => {
+    if (onSelectPackage) {
+      onSelectPackage(packageName);
+    }
     const registerSection = document.getElementById('register');
     if (registerSection) {
       registerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -186,7 +189,7 @@ export default function PricingSection() {
               </div>
 
               <button
-                onClick={handleScrollToRegister}
+                onClick={() => handleScrollToRegister(tier.name)}
                 className={`w-full py-3 rounded-[24px] font-medium text-[15px] transition-all mt-8 ${tier.buttonClass}`}
               >
                 {tier.buttonText}

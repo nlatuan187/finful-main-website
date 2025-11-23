@@ -2,10 +2,10 @@
 
 import { Shield } from "lucide-react";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SuccessPopup from "./SuccessPopup";
 
-export default function RegistrationSection() {
+export default function RegistrationSection({ selectedPackage }: { selectedPackage?: string | null }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -13,8 +13,14 @@ export default function RegistrationSection() {
     name: "",
     email: "",
     phone: "",
-    service: "Vé thường (1 buổi)",
+    service: "Vé thường",
   });
+
+  useEffect(() => {
+    if (selectedPackage) {
+      setFormData(prev => ({ ...prev, service: selectedPackage }));
+    }
+  }, [selectedPackage]);
 
   const handleFormSubmit = () => {
     setSubmitted(true);
@@ -27,7 +33,7 @@ export default function RegistrationSection() {
         name: "",
         email: "",
         phone: "",
-        service: "Vé thường (1 buổi)",
+        service: "Vé thường",
       });
       setSubmitted(false);
     }

@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+
 import Header from "@/components/Header";
 import HeroSection from "@/components/sukienbanchuyendat01/HeroSection";
 import ProblemsSection from "@/components/sukienbanchuyendat01/ProblemsSection";
@@ -8,13 +9,11 @@ import PricingSection from "@/components/sukienbanchuyendat01/PricingSection";
 import RegistrationSection from "@/components/sukienbanchuyendat01/RegistrationSection";
 import StatsAndPartnersSection from "@/components/sukienbanchuyendat01/StatsAndPartnersSection";
 import Footer from "@/components/sukienbanchuyendat01/Footer";
-
-export const metadata: Metadata = {
-    title: "Bàn chuyện Đất 01 - Vay mua Bất động sản AN TOÀN",
-    description: "Sự kiện chia sẻ kiến thức về vay mua bất động sản an toàn, tối ưu và thông minh. Giúp bạn tránh rủi ro lãi suất và đưa ra quyết định đúng đắn.",
-};
+import { useState } from "react";
 
 export default function SukienBanChuyenDat01Page() {
+    const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
+
     return (
         <div className="min-h-screen bg-white">
             <Header />
@@ -27,10 +26,10 @@ export default function SukienBanChuyenDat01Page() {
                     <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-semibold text-[#0D0F2C] text-center mb-12 lg:mb-16 leading-tight">
                         Thông tin vé tham gia sự kiện
                     </h2>
-                    <PricingSection />
+                    <PricingSection onSelectPackage={setSelectedPackage} />
                 </div>
             </div>
-            <RegistrationSection />
+            <RegistrationSection selectedPackage={selectedPackage} />
             <StatsAndPartnersSection />
             <Footer />
         </div>

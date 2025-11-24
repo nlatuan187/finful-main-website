@@ -47,15 +47,15 @@ export default function MarketingWidget() {
 
                         {/* Content */}
                         <div className="pr-6">
-                            <h3 className="font-bold text-lg mb-1">#1</h3>
-                            <p className="text-[13px] text-gray-300 mb-3 leading-relaxed">
-                                Đăng ký Webinar học cách mua BĐS tiết kiệm 200tr. Chỉ còn 7 suất ưu đãi cuối
+                            <h3 className="font-bold text-lg mb-1">Số lượng có hạn</h3>
+                            <p className="text-[12px] text-gray-300 mb-3 leading-relaxed">
+                                Tiết kiệm hàng trăm triệu khi mua BĐS thông minh chỉ với 2 tiếng tham gia webinar
                             </p>
                             <button
                                 onClick={handleScrollToPricing}
-                                className="bg-white text-black text-[13px] font-bold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+                                className="bg-[#00ACB8] text-white text-[13px] font-bold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
                             >
-                                Đăng ký
+                                Đăng ký ngay
                             </button>
                         </div>
 

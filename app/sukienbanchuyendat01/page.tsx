@@ -5,6 +5,7 @@ import HeroSection from "@/components/sukienbanchuyendat01/HeroSection";
 import ProblemsSection from "@/components/sukienbanchuyendat01/ProblemsSection";
 import ContentSection from "@/components/sukienbanchuyendat01/ContentSection";
 import ValuesSection from "@/components/sukienbanchuyendat01/ValuesSection";
+import SpeakersSection from "@/components/sukienbanchuyendat01/SpeakersSection";
 import PricingSection from "@/components/sukienbanchuyendat01/PricingSection";
 import RegistrationSection from "@/components/sukienbanchuyendat01/RegistrationSection";
 import StatsAndPartnersSection from "@/components/sukienbanchuyendat01/StatsAndPartnersSection";
@@ -22,6 +23,7 @@ export default function SukienBanChuyenDat01Page() {
         'problems',
         'content',
         'values',
+        'speakers',
         'pricing',
         'register',
         'stats'
@@ -41,6 +43,9 @@ export default function SukienBanChuyenDat01Page() {
             </div>
             <div id="values">
                 <ValuesSection />
+            </div>
+            <div id="speakers">
+                <SpeakersSection />
             </div>
             <div id="pricing" className="bg-[#E2F6FC] py-16 lg:py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-12">

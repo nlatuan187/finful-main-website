@@ -51,40 +51,44 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div className="pt-32 pb-16 lg:pt-40 lg:pb-20">
+        <div className="pt-20 pb-16 lg:pt-40 lg:pb-20">
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-12 items-center"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             {/* Left Column - Text Content */}
-            <div className="text-center lg:text-left">
+            <div className="text-center order-1">
               <motion.div
                 className="inline-flex items-center justify-center px-6 py-2 mb-6 rounded-full border-[1.5px] border-[#004449]"
                 variants={itemVariants}
               >
-                <span className="text-[#004449] text-lg sm:text-xl lg:text-[22px] font-normal">
+                <span className="text-[#004449] text-[14px] font-normal">
                   ✦ Bàn chuyện Đất 01
                 </span>
               </motion.div>
 
               <motion.h1
-                className="text-4xl sm:text-5xl lg:text-[50px] font-semibold italic mb-4 bg-gradient-to-r from-[#004449] to-[#009AA5] bg-clip-text text-transparent leading-tight"
+                className="text-2xl sm:text-5xl lg:text-[50px] font-semibold italic mb-1 sm:mb-4  bg-gradient-to-r from-[#004449] to-[#009AA5] bg-clip-text text-transparent leading-tight"
                 variants={itemVariants}
               >
                 Vay mua Bất động sản
               </motion.h1>
 
               <motion.h2
-                className="text-6xl sm:text-7xl lg:text-[110px] font-black italic leading-none mb-6 bg-gradient-to-b from-brand-teal to-brand-teal-dark bg-clip-text text-transparent"
+                className="text-6xl sm:text-7xl lg:text-[110px] font-black italic leading-none mb-3 sm:mb-6 bg-gradient-to-b from-brand-teal to-brand-teal-dark bg-clip-text text-transparent"
                 variants={itemVariants}
               >
                 AN TOÀN
               </motion.h2>
 
+              <motion.div variants={itemVariants} className="mb-3 sm:mb-6">
+                <img src="/Line 70.png" alt="Separator" className="w-auto h-auto mx-auto" />
+              </motion.div>
+
               <motion.p
-                className="text-xl sm:text-2xl lg:text-[32px] text-[#004449] mb-8"
+                className="text-xl sm:text-2xl lg:text-[32px] text-[#004449] mb-3 sm:mb-6"
                 variants={itemVariants}
               >
                 <span className="font-normal">trước khi</span>{" "}
@@ -94,8 +98,12 @@ export default function HeroSection() {
                 <span className="font-semibold italic">Giá đất lập đỉnh mới</span>
               </motion.p>
 
+              <motion.div variants={itemVariants} className="mb-3 sm:mb-6">
+                <img src="/Line 70.png" alt="Separator" className="w-auto h-auto mx-auto" />
+              </motion.div>
+
               <motion.div
-                className="text-base sm:text-lg font-semibold text-black mb-8"
+                className="text-[12px] sm:text-lg font-semibold text-black mb-3 sm:mb-6"
                 variants={itemVariants}
               >
                 🕓 9H30 - 11H30 <span className="text-[#BCBCBC]">|</span> THỨ 7 -
@@ -104,41 +112,12 @@ export default function HeroSection() {
             </div>
 
             {/* Right Column - Images */}
-            <div className="flex flex-col items-center lg:items-end">
+            <div className="flex flex-col items-center lg:items-end order-3 lg:order-2">
               <motion.div
                 className="flex gap-4 lg:gap-6 mb-6"
                 variants={imageVariants}
               >
                 <div className="relative">
-                  {/* Background SVG */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 286 391"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-full h-full"
-                    >
-                      <path
-                        d="M67.1812 0H286L224.577 391H0L67.1812 0Z"
-                        fill="url(#paint0_linear)"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear"
-                          x1="143"
-                          y1="0"
-                          x2="143"
-                          y2="391"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="white" stopOpacity="0" />
-                          <stop offset="1" stopColor="#00ACB8" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
                   <img
                     src="AnhLong.png"
                     alt="Lê Bảo Long"
@@ -146,35 +125,6 @@ export default function HeroSection() {
                   />
                 </div>
                 <div className="relative">
-                  {/* Background SVG */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
-                    <svg
-                      width="110%"
-                      height="110%"
-                      viewBox="0 0 286 391"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-full h-full"
-                    >
-                      <path
-                        d="M67.1812 0H286L224.577 391H0L67.1812 0Z"
-                        fill="url(#paint0_linear2)"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear2"
-                          x1="143"
-                          y1="0"
-                          x2="143"
-                          y2="391"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="white" stopOpacity="0" />
-                          <stop offset="1" stopColor="#00ACB8" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
                   <img
                     src="/AnhTuan.png"
                     alt="Nguyễn Lưu Anh Tuấn"
@@ -188,11 +138,11 @@ export default function HeroSection() {
                 variants={itemVariants}
               >
                 <div>
-                  <h3 className="font-bold text-base sm:text-[19px] text-[#004449] mb-1">
+                  <h3 className="font-bold text-[14px] sm:text-[19px] text-[#004449] mb-1">
                     LÊ BẢO LONG
                   </h3>
                   <p className="text-xs sm:text-[15px] text-black/80 mb-1">
-                    Giám đốc Chiến lược & Marketing
+                    CMO
                   </p>
                   <p className="font-semibold text-base sm:text-lg text-black">
                     Batdongsan.com.vn
@@ -200,7 +150,7 @@ export default function HeroSection() {
                 </div>
                 <div className="hidden sm:block w-px h-16 bg-gray-300"></div>
                 <div>
-                  <h3 className="font-bold text-base sm:text-[19px] text-[#004449] mb-1">
+                  <h3 className="font-bold text-[14px] sm:text-[19px] text-[#004449] mb-1">
                     NGUYỄN LƯU ANH TUẤN
                   </h3>
                   <p className="text-xs sm:text-[15px] text-black/80 mb-1">
@@ -211,11 +161,10 @@ export default function HeroSection() {
                   </p>
                 </div>
               </motion.div>
-
             </div>
 
             {/* CTA Button - Centered below everything */}
-            <div className="col-span-1 lg:col-span-2 flex justify-center mt-8 lg:mt-12">
+            <div className="col-span-1 lg:col-span-2 flex justify-center mt-0 lg:mt-12 order-2 lg:order-3">
               <motion.div variants={itemVariants}>
                 <button
                   onClick={handleScrollToRegister}

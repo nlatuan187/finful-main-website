@@ -9,6 +9,7 @@ import PricingSection from "@/components/sukienbanchuyendat01/PricingSection";
 import RegistrationSection from "@/components/sukienbanchuyendat01/RegistrationSection";
 import StatsAndPartnersSection from "@/components/sukienbanchuyendat01/StatsAndPartnersSection";
 import Footer from "@/components/sukienbanchuyendat01/Footer";
+import MarketingWidget from "@/components/sukienbanchuyendat01/MarketingWidget";
 import { useState } from "react";
 
 export default function SukienBanChuyenDat01Page() {
@@ -32,6 +33,7 @@ export default function SukienBanChuyenDat01Page() {
             <RegistrationSection selectedPackage={selectedPackage} />
             <StatsAndPartnersSection />
             <Footer />
+            <MarketingWidget />
         </div>
     );
 }

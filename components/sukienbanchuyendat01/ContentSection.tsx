@@ -119,7 +119,7 @@ export default function ContentSection() {
                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                       </div>
                     </div>
-                    <p className="text-sm sm:text-[15px] text-white leading-relaxed">
+                    <p className="text-[13px] sm:text-[15px] text-white leading-relaxed">
                       {item}
                     </p>
                   </div>

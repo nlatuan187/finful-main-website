@@ -50,7 +50,7 @@ export default function ValuesSection() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 lg:items-stretch gap-6 lg:gap-8 max-w-7xl mx-auto mb-12"
+          className="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-3 sm:gap-6 lg:gap-8 max-w-7xl mx-auto mb-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -68,7 +68,7 @@ export default function ValuesSection() {
 
               <div className="relative z-10 flex flex-col items-center justify-between h-full">
                 <div className="flex-1">
-                  <h3 className="text-2xl sm:text-3xl lg:text-[26px] font-semibold text-white text-center lg:text-left leading-tight">
+                  <h3 className="text-[12px] p-2 sm:text-3xl lg:text-[26px] font-semibold text-white text-center lg:text-left leading-tight">
                     60 phút tham vấn 1:1 trực tiếp với chuyên gia tài chính và
                     bất động sản
                   </h3>
@@ -76,14 +76,14 @@ export default function ValuesSection() {
 
                 <div className="flex items-end justify-center">
                   <img
-                    src="/AnhLong.png"
+                    src="/BaoLong.png"
                     alt="Expert 1"
-                    className="h-64 sm:h-80 w-auto object-cover rounded-lg relative z-10"
+                    className="h-40 sm:h-80 w-auto object-cover rounded-lg relative z-10"
                   />
                   <img
-                    src="/AnhTuan.png"
+                    src="/NLAT.png"
                     alt="Expert 2"
-                    className="h-64 sm:h-80 w-auto object-cover rounded-lg -ml-12 sm:-ml-16"
+                    className="h-40 sm:h-80 w-auto object-cover rounded-lg -ml-10 sm:-ml-16"
                   />
                 </div>
               </div>
@@ -98,35 +98,35 @@ export default function ValuesSection() {
             />
           </motion.div>
 
-          <motion.div className="lg:col-span-1 flex flex-col gap-6" variants={itemVariants}>
-            <div className="p-6 lg:p-8 rounded-lg border-2 sm:border-3 border-brand-teal bg-gradient-to-br from-brand-cyan via-brand-cyan-light to-brand-cyan flex-1 flex flex-col items-center justify-center text-center">
+          <motion.div className="col-span-2 lg:col-span-1 grid grid-cols-2 lg:flex lg:flex-col gap-3 sm:gap-6 lg:gap-6" variants={itemVariants}>
+            <div className="p-4 lg:p-8 rounded-lg border-2 sm:border-3 border-brand-teal bg-gradient-to-br from-brand-cyan via-brand-cyan-light to-brand-cyan flex-1 flex flex-col items-center justify-center text-center">
               {/* Badge with icon and text */}
               {/* Main title */}
-              <h4 className="text-xl sm:text-2xl lg:text-[24px] font-semibold text-white mb-3 leading-tight">
+              <h4 className="text-sm sm:text-2xl lg:text-[24px] font-semibold text-white mb-3 leading-tight">
                 Tìm ra phương pháp vay mua BĐS tối ưu và an toàn
               </h4>
 
               {/* Subtitle */}
-              <p className="text-base sm:text-lg lg:text-[20px] font-light text-white">
+              <p className="text-sm sm:text-lg lg:text-[20px] font-light text-white">
                 gồm vay mua để ở và để đầu tư
               </p>
-              <div className="inline-flex items-center gap-3 px-6 py-3 mt-5 mb-6 rounded-full bg-white">
-                <div className="w-12 h-12 rounded-full bg-brand-teal flex items-center justify-center">
+              <div className="inline-flex items-center gap-1 sm:gap-3 px-3 py-3 mt-5 mb-6 rounded-full bg-white">
+                <div className="w-6 h-6 sm:w-12 sm:h-12 rounded-full bg-brand-teal flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="white" />
                   </svg>
                 </div>
-                <h3 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-brand-teal">
+                <h3 className="text-[10px] sm:text-3xl lg:text-[36px] font-bold text-brand-teal">
                   ĐÒN BẨY
                 </h3>
               </div>
             </div>
             <div className="p-6 lg:p-8 rounded-lg border-2 sm:border-3 border-brand-teal bg-gradient-to-br from-white to-brand-cyan-pale flex-1">
-              <h3 className="text-xl sm:text-2xl lg:text-[25px] font-semibold text-black text-center mb-2 leading-tight">
+              <h3 className="text-sm sm:text-2xl lg:text-[25px] font-semibold text-black text-center mb-2 leading-tight">
                 Nhận bộ quà đặc biệt & tài liệu chuyên sâu từ
               </h3>
-              <p className="text-xl sm:text-2xl lg:text-[25px] font-semibold text-brand-teal text-center">
-                chuyên gia bất động sản
+              <p className="text-sm sm:text-2xl lg:text-[25px] font-semibold text-brand-teal text-center">
+                chuyên gia BĐS
               </p>
 
               <div className="mt-6">

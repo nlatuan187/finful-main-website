@@ -18,6 +18,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
     {
       name: "Vé thường",
       price: "399.000 VNĐ",
+      priceColor: "text-[#00acb8]",
       features: [
         "Vé tham gia và slide webinar",
         "Quyền truy cập công cụ AI đánh giá tính khả thi của mục tiêu mua nhà",
@@ -30,7 +31,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
       name: "Vé nâng cao",
       price: "999.000 VNĐ",
       originalPrice: "Giá gốc: 3.000.000",
-      priceColor: "text-brand-teal",
+      priceColor: "text-[#00acb8]",
       features: [
         "Vé tham gia và slide webinar",
         "Folder báo cáo thị trường, cập nhật từ 4+ đơn vị nghiên cứu thị trường BĐS",
@@ -176,7 +177,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
                         </div>
                       </div>
                       <p
-                        className={`text-sm flex-1 ${tier.textColor || "text-[#333]"
+                        className={`text-[13px] sm:text-sm flex-1 ${tier.textColor || "text-[#333]"
                           }`}
                       >
                         {isBold && <strong>{text}</strong>}

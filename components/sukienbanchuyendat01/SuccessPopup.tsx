@@ -55,7 +55,7 @@ export default function SuccessPopup({ isOpen, onClose }: SuccessPopupProps) {
                                 {/* QR Code */}
                                 <div className="mb-6">
                                     <img
-                                        src="https://api.builder.io/api/v1/image/assets/TEMP/a38d9e59d9d6e017f597ec3ac03aaf3ddd38ec17?width=522"
+                                        src="/QR code.png"
                                         alt="QR Code Zalo"
                                         className="w-64 h-64 mx-auto"
                                     />

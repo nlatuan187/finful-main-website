@@ -168,31 +168,31 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
                 />
 
                 <div className="space-y-4 flex-1">
-                  <p className="text-[15px] text-[#333]">
-                    <span className="font-semibold text-brand-teal">
-                      Nhân hàng:
+                  <p className="text-[13px] sm:text-[15px] text-[#333]">
+                    <span className="font-semibold text-[#00ACB8]">
+                      Ngân hàng:
                     </span>{" "}
                     Ngân hàng Quân đội (MB)
                   </p>
-                  <p className="text-[15px] text-[#333]">
-                    <span className="font-semibold text-brand-teal">
+                  <p className="text-[13px] sm:text-[15px] text-[#333]">
+                    <span className="font-semibold text-[#00ACB8]">
                       Chủ tài khoản:
                     </span>{" "}
                     CONG TY CO PHAN FINFUL
                   </p>
-                  <p className="text-[15px] text-[#333]">
-                    <span className="font-semibold text-brand-teal">
+                  <p className="text-[13px] sm:text-[15px] text-[#333]">
+                    <span className="font-semibold text-[#00ACB8]">
                       Số tài khoản:
                     </span>{" "}
                     9602345678
                   </p>
-                  <p className="text-[15px] text-[#333]">
-                    <span className="font-semibold text-brand-teal">
+                  <p className="text-[13px] sm:text-[15px] text-[#333]">
+                    <span className="font-semibold text-[#00ACB8]">
                       Nội dung:
                     </span>{" "}
                     Loại vé - Họ tên - Số điện thoại
                   </p>
-                  <p className="text-[15px] text-[#333]">
+                  <p className="text-[13px] sm:text-[15px] text-[#333]">
                     <span className="font-semibold text-brand-teal">
                       Ví dụ:
                     </span>{" "}
@@ -203,7 +203,7 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
 
               <div className="flex items-start gap-4 rounded-lg">
                 <Shield className="w-8 h-8 text-brand-teal flex-shrink-0 mt-1" />
-                <p className="text-base sm:text-lg text-[#333] italic">
+                <p className="text-[12px] sm:text-[15px] text-[#333] italic">
                   Sau khi xác nhận thông tin chuyển khoản, BTC sẽ gửi email vé
                   mời cho các khách hàng trong vòng 24h làm việc.
                 </p>

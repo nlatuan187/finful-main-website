@@ -11,18 +11,38 @@ import StatsAndPartnersSection from "@/components/sukienbanchuyendat01/StatsAndP
 import Footer from "@/components/sukienbanchuyendat01/Footer";
 import MarketingWidget from "@/components/sukienbanchuyendat01/MarketingWidget";
 import { useState } from "react";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
 
 export default function SukienBanChuyenDat01Page() {
     const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
 
+    // Track scroll depth for all major sections
+    useScrollTracking([
+        'hero',
+        'problems',
+        'content',
+        'values',
+        'pricing',
+        'register',
+        'stats'
+    ]);
+
     return (
         <div className="min-h-screen bg-white">
             <Header />
-            <HeroSection />
-            <ProblemsSection />
-            <ContentSection />
-            <ValuesSection />
-            <div className="bg-[#E2F6FC] py-16 lg:py-24">
+            <div id="hero">
+                <HeroSection />
+            </div>
+            <div id="problems">
+                <ProblemsSection />
+            </div>
+            <div id="content">
+                <ContentSection />
+            </div>
+            <div id="values">
+                <ValuesSection />
+            </div>
+            <div id="pricing" className="bg-[#E2F6FC] py-16 lg:py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-12">
                     <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-semibold text-[#0D0F2C] text-center mb-12 lg:mb-16 leading-tight">
                         Thông tin vé tham gia sự kiện
@@ -31,7 +51,9 @@ export default function SukienBanChuyenDat01Page() {
                 </div>
             </div>
             <RegistrationSection selectedPackage={selectedPackage} />
-            <StatsAndPartnersSection />
+            <div id="stats">
+                <StatsAndPartnersSection />
+            </div>
             <Footer />
             <MarketingWidget />
         </div>

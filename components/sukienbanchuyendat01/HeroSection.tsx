@@ -59,7 +59,7 @@ export default function HeroSection() {
             animate="visible"
           >
             {/* Left Column - Text Content */}
-            <div className="text-center order-1">
+            <div className="text-center order-1 flex flex-col items-center">
               <motion.div
                 className="inline-flex items-center justify-center px-6 py-2 mb-6 rounded-full border-[1.5px] border-[#004449]"
                 variants={itemVariants}
@@ -70,37 +70,32 @@ export default function HeroSection() {
               </motion.div>
 
               <motion.h1
-                className="text-2xl sm:text-5xl lg:text-[50px] font-semibold italic mb-1 sm:mb-4  bg-gradient-to-r from-[#004449] to-[#009AA5] bg-clip-text text-transparent leading-tight"
+                className="text-2xl lg:text-[42px] font-semibold italic mb-1 bg-gradient-to-r from-[#004449] to-[#009AA5] bg-clip-text text-transparent leading-tight"
                 variants={itemVariants}
               >
-                Vay mua Bất động sản
+                Vay mua Bất động sản an toàn
               </motion.h1>
 
+              <motion.div
+                className="w-full max-w-lg flex items-center gap-2 mb-4"
+                variants={itemVariants}
+              >
+                <span className="bg-white border border-[#006D77] text-[#006D77] px-3 py-1 text-xs sm:text-sm font-bold rounded shadow-sm whitespace-nowrap z-10">
+                  trong bối cảnh
+                </span>
+                <div className="h-px border-t-[2px] border-dashed border-[#006D77] flex-grow relative top-[1px]">
+                  <div className="absolute right-0 -top-[5px] h-[10px] border-r-[2px] border-[#006D77]"></div>
+                </div>
+              </motion.div>
+
               <motion.h2
-                className="text-6xl sm:text-7xl lg:text-[110px] font-black italic leading-none mb-3 sm:mb-6 bg-gradient-to-b from-brand-teal to-brand-teal-dark bg-clip-text text-transparent"
+                className="text-3xl sm:text-5xl lg:text-[50px] font-black italic leading-tight mb-3 sm:mb-6 text-[#006D77]"
+                style={{ textShadow: '0px 0px 30px rgba(130, 240, 252, 0.6)' }}
                 variants={itemVariants}
               >
-                AN TOÀN
+                <span className="block">LÃI SUẤT ĐI LÊN &</span>
+                <span className="block">GIÁ BĐS TĂNG PHI MÃ</span>
               </motion.h2>
-
-              <motion.div variants={itemVariants} className="mb-3 sm:mb-6">
-                <img src="/Line 70.png" alt="Separator" className="w-auto h-auto mx-auto" />
-              </motion.div>
-
-              <motion.p
-                className="text-xl sm:text-2xl lg:text-[32px] text-[#004449] mb-3 sm:mb-6"
-                variants={itemVariants}
-              >
-                <span className="font-normal">trước khi</span>{" "}
-                <span className="font-semibold italic">Lãi suất vay tăng cao</span>
-                <br />
-                <span className="font-normal">&</span>{" "}
-                <span className="font-semibold italic">Giá đất lập đỉnh mới</span>
-              </motion.p>
-
-              <motion.div variants={itemVariants} className="mb-3 sm:mb-6">
-                <img src="/Line 70.png" alt="Separator" className="w-auto h-auto mx-auto" />
-              </motion.div>
 
               <motion.div
                 className="text-[12px] sm:text-lg font-semibold text-black mb-3 sm:mb-6"

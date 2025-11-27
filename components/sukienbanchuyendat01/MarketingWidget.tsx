@@ -47,9 +47,9 @@ export default function MarketingWidget() {
 
                         {/* Content */}
                         <div className="pr-6">
-                            <h3 className="font-bold text-lg mb-1">Số lượng có hạn</h3>
+                            <h3 className="font-bold text-lg mb-1">Tham gia nhóm Zalo ngay</h3>
                             <p className="text-[12px] text-gray-300 mb-3 leading-relaxed">
-                                Tiết kiệm hàng trăm triệu khi mua BĐS thông minh chỉ với 2 tiếng tham gia webinar
+                                Tiết kiệm hàng trăm triệu khi mua BĐS thông minh chỉ với 2 tiếng tham gia sự kiện
                             </p>
                             <button
                                 onClick={handleScrollToPricing}

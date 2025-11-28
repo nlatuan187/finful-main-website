@@ -101,62 +101,22 @@ export default function HeroSection() {
                 className="text-[12px] sm:text-lg font-semibold text-black mb-3 sm:mb-6"
                 variants={itemVariants}
               >
-                🕓 9H30 - 11H30 <span className="text-[#BCBCBC]">|</span> THỨ 7 -
-                6.12.2025 <span className="text-[#BCBCBC]">|</span> VINUNIVERSITY
+                🕓 19H30 - 21H30 <span className="text-[#BCBCBC]">|</span> THỨ 5 -
+                11.12.2025 <span className="text-[#BCBCBC]">|</span> ZOOM MEETING
               </motion.div>
             </div>
 
-            {/* Right Column - Images */}
-            <div className="flex flex-col items-center lg:items-end order-3 lg:order-2">
-              <motion.div
-                className="flex gap-4 lg:gap-6 mb-6"
-                variants={imageVariants}
-              >
-                <div className="relative">
-                  <img
-                    src="AnhLong.png"
-                    alt="Lê Bảo Long"
-                    className="h-64 sm:h-80 lg:h-[343px] w-auto object-cover rounded-lg relative z-10"
-                  />
-                </div>
-                <div className="relative">
-                  <img
-                    src="/AnhTuan.png"
-                    alt="Nguyễn Lưu Anh Tuấn"
-                    className="h-64 sm:h-80 lg:h-[339px] w-auto object-cover rounded-lg relative z-10"
-                  />
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="flex flex-row items-center gap-4 sm:gap-8 text-center mb-8"
-                variants={itemVariants}
-              >
-                <div>
-                  <h3 className="font-bold text-[14px] sm:text-[19px] text-[#004449] mb-1">
-                    LÊ BẢO LONG
-                  </h3>
-                  <p className="text-xs sm:text-[15px] text-black/80 mb-1">
-                    CMO
-                  </p>
-                  <p className="font-semibold text-base sm:text-lg text-black">
-                    Batdongsan.com.vn
-                  </p>
-                </div>
-                <div className="hidden sm:block w-px h-16 bg-gray-300"></div>
-                <div>
-                  <h3 className="font-bold text-[14px] sm:text-[19px] text-[#004449] mb-1">
-                    NGUYỄN LƯU ANH TUẤN
-                  </h3>
-                  <p className="text-xs sm:text-[15px] text-black/80 mb-1">
-                    Nhà sáng lập
-                  </p>
-                  <p className="font-semibold text-base sm:text-lg text-black uppercase">
-                    FINFUL
-                  </p>
-                </div>
-              </motion.div>
-            </div>
+            {/* Right Column - Image */}
+            <motion.div
+              className="flex items-center justify-center order-2 mt-8 lg:mt-0"
+              variants={imageVariants}
+            >
+              <img
+                src="/Nambat.png"
+                alt="Bàn chuyện đất 01"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-full rounded-lg shadow-2xl"
+              />
+            </motion.div>
 
             {/* CTA Button - Centered below everything */}
             <div className="col-span-1 lg:col-span-2 flex justify-center mt-0 lg:mt-12 order-2 lg:order-3">

@@ -27,53 +27,33 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
   const tiers = [
     {
       name: "Vé thường",
-      price: "399.000 VNĐ",
+      price: "Miễn phí",
       priceColor: "text-[#00acb8]",
       features: [
-        "Vé tham gia và slide webinar",
+        "Vé tham gia webinar",
         "Quyền truy cập công cụ AI đánh giá tính khả thi của mục tiêu mua nhà",
+        // "30 phút tư vấn cá nhân hóa cùng chuyên gia"
       ],
       buttonText: "Đăng ký",
       buttonClass: "bg-[#00acb8] text-white hover:bg-[#007880]",
       borderClass: "border-[#00acb8]",
     },
     {
-      name: "Vé nâng cao",
-      price: "999.000 VNĐ",
-      originalPrice: "Giá gốc: 3.000.000",
-      priceColor: "text-[#00acb8]",
-      features: [
-        "Vé tham gia và slide webinar",
-        "Folder báo cáo thị trường, cập nhật từ 4+ đơn vị nghiên cứu thị trường BĐS",
-        "Bộ tài liệu phân tích thị trường tài chính và nhận định triển vọng của các kênh đầu tư",
-        "Quyền truy cập công cụ AI đánh giá tính khả thi của mục tiêu mua nhà",
-        {
-          text: "1 buổi tư vấn tổng quan",
-          bold: true,
-          append:
-            " với Finful giúp xác định hiện trạng tài chính và lập kế hoạch tích luỹ mua nhà",
-        },
-      ],
-      buttonText: "Đăng ký",
-      buttonClass: "bg-[#00acb8] text-white hover:bg-[#007880]",
-      borderClass: "border-[#00acb8]",
-    },
-    {
-      name: "Vé VVIP",
-      price: "6.000.000 VNĐ",
-      originalPrice: "Giá gốc: 15.000.000",
+      name: "Vé VIP",
+      price: "299.000 VNĐ",
+      originalPrice: "Giá gốc: 500.000",
       priceColor: "text-white",
-      badge: "ĐỒNG HÀNH LÂU DÀI",
+      // badge: "ĐỒNG HÀNH LÂU DÀI",
       features: [
-        "Vé tham gia và slide webinar",
-        "Folder báo cáo thị trường, cập nhật từ 4+ đơn vị nghiên cứu thị trường BĐS",
-        "Bộ tài liệu phân tích thị trường tài chính và nhận định triển vọng của các kênh đầu tư",
+        "Vé tham gia webinar",
+        "FNhận toàn bộ slide và file record sau chương trình",
         "Quyền truy cập công cụ AI đánh giá tính khả thi của mục tiêu mua nhà",
+        "Bộ tài liệu phân tích thị trường tài chính và nhận định triển vọng của các kênh đầu tư",
         {
-          text: "1 buổi tư vấn chuyên sâu",
+          text: "1 buổi tư vấn 1:1",
           bold: true,
           append:
-            " với chuyên gia và cam kết đồng hành tới khi đạt mục tiêu mua BĐS, hỗ trợ lên kế hoạch tích luỹ tài chính, tư vấn lựa chọn mua/thuê nhà và tư vấn một số lựa chọn BĐS phù hợp",
+            " với chuyên gia hỗ trợ lên kế hoạch tích luỹ tài chính và vay mua BĐS phù hợp.",
         },
       ],
       buttonText: "Đăng ký",
@@ -113,7 +93,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
     <section className="py-16 lg:py-24 bg-white rounded-xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -126,7 +106,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
                 } ${tier.borderClass ? `border-2 ${tier.borderClass}` : ""} ${tier.isPopular ? "shadow-2xl lg:scale-105 lg:z-10" : ""
                 } transition-transform`}
             >
-              {tier.badge && (
+              {/* {tier.badge && (
                 <div className="flex justify-end mb-4">
                   <div className="px-4 py-1 rounded-full bg-[#4CC4CD]">
                     <span className="text-[10px] font-extrabold text-[#00565C] uppercase">
@@ -134,7 +114,7 @@ export default function PricingSection({ onSelectPackage }: { onSelectPackage?: 
                     </span>
                   </div>
                 </div>
-              )}
+              )} */}
 
               <div className="mb-6">
                 <div className="mb-2">

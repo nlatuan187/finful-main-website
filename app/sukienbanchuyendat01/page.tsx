@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/Header";
+import Header from "@/components/sukienbanchuyendat01/Header";
 import HeroSection from "@/components/sukienbanchuyendat01/HeroSection";
 import ProblemsSection from "@/components/sukienbanchuyendat01/ProblemsSection";
 import ContentSection from "@/components/sukienbanchuyendat01/ContentSection";

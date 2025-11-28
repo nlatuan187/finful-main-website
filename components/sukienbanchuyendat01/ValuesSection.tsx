@@ -61,7 +61,7 @@ export default function ValuesSection() {
               alt="Value 1"
               className="w-full h-auto rounded-lg"
             />
-            <div className="relative lg:p-4 text-center rounded-lg border-2 border-brand-teal bg-gradient-to-b from-brand-teal to-[#007880] overflow-hidden flex-1 flex flex-col">
+            <div className="relative lg:px-4 pt-4 text-center rounded-lg border-2 border-brand-teal bg-gradient-to-b from-brand-teal to-[#007880] overflow-hidden flex-1 flex flex-col">
               <div className="absolute inset-0 opacity-30 pointer-events-none">
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#EEEEEE] rounded-full blur-[125px]"></div>
               </div>
@@ -76,14 +76,9 @@ export default function ValuesSection() {
 
                 <div className="flex items-end justify-center">
                   <img
-                    src="/BaoLong.png"
-                    alt="Expert 1"
-                    className="h-40 sm:h-80 w-auto object-cover rounded-lg relative z-10"
-                  />
-                  <img
-                    src="/NLAT.png"
+                    src="/AnhTuan.png"
                     alt="Expert 2"
-                    className="h-40 sm:h-80 w-auto object-cover rounded-lg -ml-10 sm:-ml-16"
+                    className="w-[70%] h-auto object-cover rounded-lg"
                   />
                 </div>
               </div>

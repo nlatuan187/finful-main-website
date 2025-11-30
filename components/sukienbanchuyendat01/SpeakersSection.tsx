@@ -35,7 +35,7 @@ export default function SpeakersSection() {
                         <div className="md:col-span-3 p-8">
                             <h3 className="text-2xl lg:text-3xl font-bold text-[#00ACB8] mb-2">NGUYỄN LƯU ANH TUẤN</h3>
                             <p className="text-gray-700 text-sm lg:text-base mb-6">
-                                Nhà sáng lập, Chuyên gia Tài chính & Công nghệ | <strong>FINFUL</strong>
+                                Nhà sáng lập | <strong>FINFUL</strong>
                             </p>
                             <ul className="space-y-4 text-sm lg:text-base text-gray-800">
                                 <li className="flex items-start">
@@ -57,16 +57,15 @@ export default function SpeakersSection() {
                                     </span>
                                 </li>
                             </ul>
-                            <div className="mt-8 p-4 border border-brand-teal rounded-lg">
+                            {/* <div className="mt-8 p-4 border border-brand-teal rounded-lg">
                                 <div className="flex justify-around items-center flex-wrap gap-6">
-                                    {/* Vui lòng đảm bảo các file logo này tồn tại trong thư mục /public */}
                                     <img src="/FinfulLogo.png" alt="Finful" className="h-8 object-contain"/>
                                     <img src="/McKinsey_logo.png" alt="McKinsey & Company" className="h-8 object-contain"/>
                                     <img src="/EY_logo.png" alt="EY" className="h-8 object-contain"/>
                                     <img src="/Vingroup_logo.png" alt="Vingroup" className="h-8 object-contain"/>
                                     <img src="/Antler_logo.png" alt="Antler" className="h-8 object-contain"/>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </motion.div>

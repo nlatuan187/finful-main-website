@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        dark: "#001112",
+        "dark-light": "#002224",
+        teal: "#00ACB8",
+        "teal-dark": "#008993",
         // Thêm màu mới của bạn ở đây
         'light-cyan': '#ECF8F9',
         brand: {

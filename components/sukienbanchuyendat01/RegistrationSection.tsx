@@ -135,8 +135,7 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
                     className="w-full px-4 py-3 rounded-md border border-brand-teal bg-[#FAFAFA] text-[15px] font-medium text-[#333] appearance-none focus:outline-none focus:ring-2 focus:ring-brand-teal"
                   >
                     <option>Vé thường</option>
-                    <option>Vé nâng cao</option>
-                    <option>Vé VVIP</option>
+                    <option>Vé VIP</option>
                   </select>
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                     <svg

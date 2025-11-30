@@ -35,13 +35,13 @@ export default function Header() {
             <a
                 href="https://education.finful.co/"
                 target="_blank"
-                className="flex items-center gap-1 text-[#656C86] text-[15px] font-semibold hover:text-brand-teal transition-colors"
+                className="flex items-center gap-1 text-[#656C86] text-[15px] font-semibold hover:text-teal transition-colors"
             >
                 Giáo dục tài chính
             </a>
             <button
                 onClick={handleScrollToRegister}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-teal text-white text-[14px] font-medium shadow-md hover:bg-brand-teal-dark transition-colors"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-teal text-white text-[14px] font-medium shadow-md hover:bg-teal-dark transition-colors"
             >
                 Đăng ký ngay
                 <svg

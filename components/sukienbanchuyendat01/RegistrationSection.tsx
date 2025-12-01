@@ -11,7 +11,6 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
 
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     service: "Vé thường",
   });
@@ -41,7 +40,6 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
     if (submitted) {
       setFormData({
         name: "",
-        email: "",
         phone: "",
         service: "Vé thường",
       });
@@ -83,23 +81,6 @@ export default function RegistrationSection({ selectedPackage }: { selectedPacka
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-md border border-brand-teal bg-[#FAFAFA] text-[15px] font-medium text-[#333] placeholder:text-[#B0B0B0] focus:outline-none focus:ring-2 focus:ring-brand-teal"
-                />
-              </div>
-
-              <div>
-                <label className="block text-[#333] text-base font-semibold mb-2">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  name="entry.1887976924"
-                  placeholder="Nhập email"
-                  required
-                  pattern=".*@.*"
-                  title="Email phải chứa ký tự @"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 rounded-md border border-brand-teal bg-[#FAFAFA] text-[15px] font-medium text-[#333] placeholder:text-[#B0B0B0] focus:outline-none focus:ring-2 focus:ring-brand-teal"
                 />
               </div>

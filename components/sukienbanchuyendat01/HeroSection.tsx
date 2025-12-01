@@ -33,7 +33,6 @@ export default function HeroSection() {
   
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
     service: "Vé thường",
   });
@@ -56,7 +55,6 @@ export default function HeroSection() {
     formDataUrl.append("entry.1531178908", formData.name);
     formDataUrl.append("entry.1887976924", formData.phone);
     formDataUrl.append("entry.2138638337", formData.service);
-    formDataUrl.append("entry.1180298465", formData.email);
 
     try {
       await fetch(googleFormUrl, {
@@ -70,7 +68,6 @@ export default function HeroSection() {
       setIsModalOpen(true);
       setFormData({
         name: "",
-        email: "",
         phone: "",
         service: "Vé thường",
       });
@@ -115,6 +112,18 @@ export default function HeroSection() {
     },
   };
 
+  const giftBoxVariants = {
+    bounce: {
+      y: ["-4px", "4px"],
+      transition: {
+        duration: 1.2,
+        ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
+        repeat: Infinity,
+        repeatType: "reverse" as const,
+      },
+    },
+  };
+
   const handleScrollToRegister = () => {
     const registerSection = document.getElementById('register');
     if (registerSection) {
@@ -131,7 +140,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="pt-20 pb-16 lg:pt-40 lg:pb-20">
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-7 gap-3 lg:gap-12 items-center"
+            className="grid grid-cols-1 lg:grid-cols-7 lg:gap-12 items-center"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -195,7 +204,7 @@ export default function HeroSection() {
 
             {/* Right Column - Image */}
             <motion.div
-              className="rounded-lg overflow-hidden col-span-3 max-w-lg order-2 mt-8 lg:mt-0 bg-dark text-white"
+              className="rounded-lg overflow-hidden col-span-3 max-w-lg mx-auto order-2 mt-8 lg:mt-0 bg-dark text-white"
               variants={imageVariants}
             >
               <div className="p-4 text-center">
@@ -207,7 +216,7 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <div className="p-6 lg:p-8 bg-dark-light">
+              <div className="p-4 bg-dark-light">
                 <div className="grid grid-cols-4 gap-2 lg:gap-3 mb-2 text-center">
                   <div className="bg-white p-3 rounded">
                     <p className="text-2xl lg:text-3xl font-semibold text-dark -tracking-wider">
@@ -238,6 +247,17 @@ export default function HeroSection() {
                   <span>Giây</span>
                 </div>
 
+                <div className="text-white/90 text-sm font-bold text-center mb-4">
+                  <motion.span
+                    className="inline-block mr-2"
+                    variants={giftBoxVariants}
+                    animate="bounce"
+                  >
+                    🎁
+                  </motion.span>
+                  Nhận ngay bộ tài liệu BĐS dòng tiền sau khi hoàn tất form đăng ký
+                </div>
+
                 <form className="space-y-4" onSubmit={handleFormSubmit}>
                   <input
                     type="text"
@@ -245,14 +265,6 @@ export default function HeroSection() {
                     className="w-full px-4 py-3 rounded-md bg-[#FAFAFA] border border-[#F2F2F2] text-[#333] placeholder-[#B0B0B0] font-medium"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-4 py-3 rounded-md bg-[#FAFAFA] border border-[#F2F2F2] text-[#333] placeholder-[#B0B0B0] font-medium"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
                   />
                   <input
